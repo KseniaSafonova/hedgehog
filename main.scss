@@ -1,0 +1,197 @@
+$gray: #70908B;
+$lightpink: #FFEDCD;
+$lightgray: #C4C4C4;
+$lightblue: #E2F0DF;
+$darkgray: #195557;
+
+
+.mainContainer {
+    background-image: url(/assets/images/Subtract.jpg);
+    // background-repeat: no-repeat;
+    width: 1920px;
+    background-size: contain;
+    height: 992px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__logo {
+    margin-top: 35px;
+}
+
+.header__nav {
+    margin-top: 69px;
+    font-size: 16px;
+    height: 20px;
+}
+
+.header__phoneNumber {
+    display: flex;
+    margin-top: 48px;
+}
+
+.header__phoneNumber__button {
+    background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
+    box-shadow: 4px 4px 20px 0px #C2CCCA;
+    height: 69px;
+    width: 69px;
+    border-radius: 40px;
+    border-style: none;
+}
+
+.header__phoneNumber__number {
+    font-family: 'Raleway';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $darkgray;
+    margin-top: 21px;
+    margin-left: 20px;
+}
+
+.header__basket {
+    margin-top: 64px;
+}
+
+.main__title {
+    text-align: center;
+    color: $gray;
+}
+
+.main__title__hedgehogs {
+    height: 94px;
+    width: 443px;
+    margin-top: 173px;
+}
+
+.main__title__text1 {
+    font-family: 'Cormorant Infant';
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 19px;
+}
+
+.main__title__text2 {
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 18px;
+}
+
+.main__title__mainButton {
+    height: 69px;
+    width: 328px;
+    border-radius: 40px;
+    background-color: $gray;
+    border-color: $gray;
+    color: #FFFFFF;
+    border-style: none;
+    box-shadow: 4px 4px 20px 0px #C2CCCA;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 34px;
+
+    &:hover {
+        background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
+        color: $darkgray;
+    }
+}
+
+.main__about {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.hedgehogBreeding_logo,
+.hedgehogHealth_logo,
+.hedgehogLove_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    margin-left: 95px;
+    margin-right: 95px;
+    box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+}
+
+
+.hedgehogBreeding_logo {
+    background-color: $lightpink;
+    margin-top: 150px;
+}
+
+.hedgehogHealth_logo {
+    background: $lightblue;
+    margin-top: 127px;
+}
+
+.hedgehogLove_logo {
+    background: $gray;
+    margin-top: 150px;
+}
+
+.hedgehogBreeding_text,
+.hedgehogHealth_text,
+.hedgehogLove_text {
+    width: 173px;
+    color: $darkgray;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 95px;
+    margin-right: 95px;
+}
+
+
+.hedgehogBreeding_text1,
+.hedgehogHealth_text1,
+.hedgehogLove_text1 {
+    font-family: 'Cormorant Infant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: $darkgray;
+}
+
+
+.hedgehogBreeding_text2,
+.hedgehogHealth_text2,
+.hedgehogLove_text2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: $darkgray;
+}
+
+
+.main__form_buttonActive {
+    box-sizing: border-box;
+    width: 170px;
+    height: 49px;
+    color: #FFFFFF;
+    background: $gray;
+    border: 2px solid $gray;
+    border-radius: 61px;
+}
+
+.main__form_button {
+    box-sizing: border-box;
+    width: 170px;
+    height: 49px;
+    color: $gray;
+    background-color: #FFFFFF;
+    border: 2px solid $gray;
+    border-radius: 61px;
+}

@@ -1,0 +1,203 @@
+.mainContainer {
+  background-image: url(/assets/images/Subtract.jpg);
+  width: 1920px;
+  background-size: contain;
+  height: 992px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header__logo {
+  margin-top: 35px;
+}
+
+.header__nav {
+  margin-top: 69px;
+  font-size: 16px;
+  height: 20px;
+}
+
+.header__phoneNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 48px;
+}
+
+.header__phoneNumber__button {
+  background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
+  -webkit-box-shadow: 4px 4px 20px 0px #C2CCCA;
+          box-shadow: 4px 4px 20px 0px #C2CCCA;
+  height: 69px;
+  width: 69px;
+  border-radius: 40px;
+  border-style: none;
+}
+
+.header__phoneNumber__number {
+  font-family: 'Raleway';
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #195557;
+  margin-top: 21px;
+  margin-left: 20px;
+}
+
+.header__basket {
+  margin-top: 64px;
+}
+
+.main__title {
+  text-align: center;
+  color: #70908B;
+}
+
+.main__title__hedgehogs {
+  height: 94px;
+  width: 443px;
+  margin-top: 173px;
+}
+
+.main__title__text1 {
+  font-family: 'Cormorant Infant';
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 19px;
+}
+
+.main__title__text2 {
+  font-family: 'Raleway';
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 18px;
+}
+
+.main__title__mainButton {
+  height: 69px;
+  width: 328px;
+  border-radius: 40px;
+  background-color: #70908B;
+  border-color: #70908B;
+  color: #FFFFFF;
+  border-style: none;
+  -webkit-box-shadow: 4px 4px 20px 0px #C2CCCA;
+          box-shadow: 4px 4px 20px 0px #C2CCCA;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 34px;
+}
+
+.main__title__mainButton:hover {
+  background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
+  color: #195557;
+}
+
+.main__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hedgehogBreeding_logo,
+.hedgehogHealth_logo,
+.hedgehogLove_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+  margin-left: 95px;
+  margin-right: 95px;
+  -webkit-box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+          box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+}
+
+.hedgehogBreeding_logo {
+  background-color: #FFEDCD;
+  margin-top: 150px;
+}
+
+.hedgehogHealth_logo {
+  background: #E2F0DF;
+  margin-top: 127px;
+}
+
+.hedgehogLove_logo {
+  background: #70908B;
+  margin-top: 150px;
+}
+
+.hedgehogBreeding_text,
+.hedgehogHealth_text,
+.hedgehogLove_text {
+  width: 173px;
+  color: #195557;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 95px;
+  margin-right: 95px;
+}
+
+.hedgehogBreeding_text1,
+.hedgehogHealth_text1,
+.hedgehogLove_text1 {
+  font-family: 'Cormorant Infant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #195557;
+}
+
+.hedgehogBreeding_text2,
+.hedgehogHealth_text2,
+.hedgehogLove_text2 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #195557;
+}
+
+.main__form_buttonActive {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 170px;
+  height: 49px;
+  color: #FFFFFF;
+  background: #70908B;
+  border: 2px solid #70908B;
+  border-radius: 61px;
+}
+
+.main__form_button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 170px;
+  height: 49px;
+  color: #70908B;
+  background-color: #FFFFFF;
+  border: 2px solid #70908B;
+  border-radius: 61px;
+}
+/*# sourceMappingURL=main.css.map */

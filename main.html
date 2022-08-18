@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hedgehog</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<!-- Разобраться с выпадающим списком, выровнять ежей (flex - align-self) -->
+
+<body>
+    <div class="mainContainer">
+        <header class="header">
+            <div class="header__logo"><img src="/assets/images/Logo.svg" alt="Hedgehog"></div>
+            <nav class="header__nav">
+                <select><a href="">КАТАЛОГ</a>
+                    <option value="ЁЖИКИ"><a href="#">ЁЖИКИ</a></option>
+                    <option value="ПИТАНИЕ"><a href="">ПИТАНИЕ</a></option>
+                    <option value="ПЕРЕНОСКИ"><a href="">ПЕРЕНОСКИ</a></option>
+                    <option value="ЛЕКАРСТВА"><a href="">ЛЕКАРСТВА</a></option>
+                </select>
+                <a href="">О НАС</a>
+                <a href="">КОНТАКТЫ</a>
+                <a href="">ГАЛЕРЕЯ</a>
+            </nav>
+            <div class="header__phoneNumber">
+                <button class="header__phoneNumber__button">
+                    <img src="/assets/images/phone.svg" alt="">
+                </button>
+                <div class="header__phoneNumber__number">+7 (965) 569-89-98</div>
+            </div>
+            <div class="header__basket"><img src="/assets/images/basket.svg" alt=""></div>
+        </header>
+        <main class="main">
+            <section class="main__title">
+                <img src="/assets/images/hedgehogs.svg" alt="ЁЖИКИ" class="main__title__hedgehogs">
+                <div class="main__title__text1">ТОЖЕ ЛЮБЯТ МОЛОКО</div>
+                <div class="main__title__text2">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и
+                    царапать вашу мебель.</div>
+                <div><button class="main__title__mainButton">Купить ёжика</button></div>
+            </section>
+            <section class="main__about">
+                <div class="hedgehogLeft"><img src="/assets/images/hedgehogLeft.png" alt=""></div>
+                <div class="main__about__hedgehogBreeding">
+                    <div class="hedgehogBreeding_logo"><img src="/assets/images/hedgehog.svg" alt="hedgehogBreeding">
+                    </div>
+                    <div class="hedgehogBreeding_text">
+                        <p class="hedgehogBreeding_text1">РАЗВЕДЕНИЕ ЁЖИКОВ</p>
+                        <p class="hedgehogBreeding_text2">Собственная ферма, уход и содержание</p>
+                    </div>
+                </div>
+                <div class="main__about__hedgehogHealth">
+                    <div class="hedgehogHealth_logo"><img src="/assets/images/health.svg" alt="hedgehogHealth">
+                    </div>
+                    <div class="hedgehogHealth_text">
+                        <p class="hedgehogHealth_text1">ЗДОРОВЬЕ</p>
+                        <p class="hedgehogHealth_text2">Всегда прививаем и вовремя обследуем ваших будущих питомцев</p>
+                    </div>
+                </div>
+                <div class="main__about__hedgehogLove">
+                    <div class="hedgehogLove_logo"><img src="/assets/images/heart.svg" alt="hedgehogLove">
+                    </div>
+                    <div class="hedgehogLove_text">
+                        <p class="hedgehogLove_text1">ЛЮБОВЬ И ЗАБОТА</p>
+                        <p class="hedgehogLove_text2">Каждому ёжику мы дарим много внимания</p>
+                    </div>
+                </div>
+                <div class="hedgehogRight"><img src="/assets/images/hedgehogRight.png" alt=""></div>
+            </section>
+        </main>
+    </div>
+    <section class="main__cards">
+        <div>Евгений</div>
+        <div>Максим</div>
+    </section>
+    <section class="main__form">
+        <div>Заполните заявку и мы забронируем для Вас нового друга</div>
+        <div>
+            <button class="main__form_buttonActive">хочу ёжика для себя</button>
+            <button class="main__form_button">хочу ёжика для детей</button>
+            <button class="main__form_button">хочу ёжика для разведения</button>
+        </div>
+        <div>
+            <input type="radio">Мне нужен 1-2 ёжика
+            <input type="radio">Мне нужны 3-4 ёжика
+            <input type="radio">Мне нужны 3 и более ёжиков
+            <input type="radio">Пока присматриваюсь
+        </div>
+        <div>
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваш телефон">
+            <input type="text" placeholder="Ваш e-mail">
+        </div>
+        <div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий к заявке"></textarea>
+        </div>
+        <div><button class="mainButton">Купить ёжика</button></div>
+    </section>
+    <section class="main__count">
+        <div>У на осталось еще: 25 ёжиков</div>
+        <div>Торопитесь! Акция действует до 26. 02. 2023</div>
+    </section>
+    <footer>
+        <div class="footer__logo"><img src="/assets/images/Logo.svg" alt="Hedgehog"></div>
+        <nav>
+            <a href="">КАТАЛОГ</a>
+            <a href="">О НАС</a>
+            <a href="">КОНТАКТЫ</a>
+            <a href="">ГАЛЕРЕЯ</a>
+        </nav>
+        <div class="footer__socialNetworks"></div>
+        <div class="footer__phoneNumber">+7 (965) 569-89-98</div>
+    </footer>
+</body>
+
+</html>
