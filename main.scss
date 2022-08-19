@@ -83,7 +83,7 @@ $darkgray: #195557;
     margin-top: 18px;
 }
 
-.main__title__mainButton {
+.main__title_mainButton {
     height: 69px;
     width: 328px;
     border-radius: 40px;
@@ -110,8 +110,6 @@ $darkgray: #195557;
     justify-content: space-around;
 }
 
-
-
 .hedgehogBreeding_logo,
 .hedgehogHealth_logo,
 .hedgehogLove_logo {
@@ -125,7 +123,6 @@ $darkgray: #195557;
     margin-right: 95px;
     box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
 }
-
 
 .hedgehogBreeding_logo {
     background-color: $lightpink;
@@ -164,7 +161,6 @@ $darkgray: #195557;
     color: $darkgray;
 }
 
-
 .hedgehogBreeding_text2,
 .hedgehogHealth_text2,
 .hedgehogLove_text2 {
@@ -175,8 +171,103 @@ $darkgray: #195557;
     color: $darkgray;
 }
 
+.main__cards {
+    display: flex;
+    padding-left: 370px;
+    margin-top: 100px;
+}
+
+.main__cards_leftCard {
+    width: 570px;
+    height: 397px;
+    background: $lightpink;
+    box-shadow: 4px 4px 40px #F1F1F1;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+}
+
+.main__cards_rightCard {
+    width: 570px;
+    height: 397px;
+    background: $lightblue;
+    box-shadow: 4px 4px 40px #F1F1F1;
+    border-radius: 20px;
+    margin-left: 39px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+}
+
+.main__cards_leftBlock {
+    margin-left: 62px;
+}
+
+.main__cards_rightBlock {
+    margin-left: -70px;
+}
+
+.main_cards_discount {
+    height: 36px;
+    width: 68px;
+    background-color: $gray;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 6px;
+    box-sizing: border-box;
+    margin-top: -6px;
+}
+
+.main__cards_title {
+    font-family: 'Cormorant Infant';
+    font-size: 40px;
+    font-weight: 700;
+    color: $darkgray;
+    margin-top: 24px;
+}
+
+.main__cards_text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    margin-top: 17px;
+    width: 182px;
+
+}
+
+.main__cards_price1 {
+    width: 204px;
+    font-family: 'Cormorant Infant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration-line: line-through;
+    color: #C2CCCA;
+    margin-top: 7px;
+    margin-bottom: 0px;
+
+}
+
+.main__cards_price2 {
+    width: 204px;
+    font-family: 'Cormorant Infant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: $darkgray;
+    margin-top: 0;
+
+}
+
 .main__form {
     margin-left: 363px;
+    margin-top: 93px;
 }
 
 .main__form_form {
@@ -190,64 +281,15 @@ $darkgray: #195557;
     font-family: 'Cormorant Infant';
     font-size: 45px;
     font-weight: 700;
-    line-height: 54px;
     height: 54px;
     color: $darkgray;
     padding-left: 50px;
-    margin-top: 39px;
+    padding-top: 39px;
 }
 
 .main__form_topBlock {
     display: flex;
     justify-content: space-between;
-}
-
-.main__form_buttonBlock {}
-
-.main__form_radioBlock {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 53px;
-    float: right;
-    margin-top: 20px;
-    font-family: 'Cormorant Infant';
-    font-size: 14px;
-    font-weight: 700;
-    color: $gray;
-    margin-right: 113px;
-}
-
-.radio {
-    width: 14px;
-    border-color: $gray;
-    background-color: #EAEEEF;
-    margin-right: 7px;
-    margin-top: 10px;
-}
-
-.radioText {
-    display: block;
-    margin-top: -18px;
-    margin-left: 20px;
-}
-
-.main__form_bottomBlock {}
-
-.main__form_input {
-    height: 62px;
-    width: 352px;
-    border-radius: 8px;
-    background: #F8F8F8;
-    margin-top: 43px;
-    border: none;
-    box-sizing: border-box;
-    margin-left: 20px;
-    color: $darkgray;
-    padding-left: 27px;
-
-    &:nth-child(1) {
-        margin-left: 49px;
-    }
 }
 
 .main__form_button {
@@ -276,4 +318,193 @@ $darkgray: #195557;
     &:nth-child(3) {
         width: 199px;
     }
+}
+
+.main__form_radioBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 53px;
+    float: right;
+    margin-top: 20px;
+    font-family: 'Cormorant Infant';
+    font-size: 14px;
+    font-weight: 700;
+    color: $gray;
+    margin-right: 113px;
+}
+
+.radio {
+    width: 14px;
+    border-color: $gray;
+    background-color: #EAEEEF;
+    margin-right: 7px;
+    margin-top: 10px;
+}
+
+.radioText {
+    display: block;
+    margin-top: -18px;
+    margin-left: 20px;
+}
+
+.main__form_input {
+    height: 62px;
+    width: 352px;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin-top: 43px;
+    border: none;
+    margin-left: 20px;
+    color: $darkgray;
+    padding-left: 27px;
+    box-sizing: border-box;
+
+    &:nth-child(1) {
+        margin-left: 49px;
+    }
+}
+
+.main__form_textarea {
+    height: 108px;
+    width: 1102px;
+    border-radius: 8px;
+    background: #F8F8F8;
+    border: none;
+    margin-top: 20px;
+    margin-left: 49px;
+    padding-left: 27px;
+    box-sizing: border-box;
+}
+
+.main__form_mainButtonblock {
+    text-align: center;
+}
+
+.main__form_mainButton {
+    height: 69px;
+    width: 328px;
+    border-radius: 40px;
+    background-color: $gray;
+    border-color: $gray;
+    color: #FFFFFF;
+    border-style: none;
+    box-shadow: 4px 4px 20px 0px #C2CCCA;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 45px;
+
+    &:hover {
+        background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
+        color: $darkgray;
+    }
+}
+
+.main__count {
+    display: block;
+    margin-left: 777px;
+    margin-top: 60px;
+    width: 370px;
+}
+
+.main__count_title {
+    font-family: 'Cormorant Infant';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: $darkgray;
+    margin-top: 20px;
+    display: flex;
+}
+
+.main__count_title p {
+    margin-left: 13px;
+}
+
+.main__count_title a {
+    color: $darkgray;
+}
+
+.main__count_text {
+    height: 47px;
+    width: 191px;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 30px;
+    color: $darkgray;
+    margin-left: 89px;
+    text-align: center;
+}
+
+.footer {
+    height: 184px;
+    width: 1920px;
+    background-color: $gray;
+    margin-top: 60px;
+}
+
+.footer__topBlock {
+    height: 96px;
+    border: 1px solid red;
+}
+
+.footer__logo {
+    width: 132px;
+    margin-left: 60px;
+    margin-top: 49px;
+    border: 1px solid red;
+}
+
+.footer__nav {
+    margin-left: 800px;
+    width: 474px;
+    border: 1px solid red;
+}
+
+.footer__nav a {
+    font-family: 'Cormorant Infant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid red;
+}
+
+.footer__socialNetworks {
+    width: 136px;
+    margin-left: 1454px;
+    border: 1px solid red;
+}
+
+.footer__phoneNumber {
+    width: 194px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    margin-left: 1666px;
+    border: 1px solid red;
+}
+
+.footer__bottomBlock {
+    height: 24px;
+    width: 398px;
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-size: 9px;
+    font-weight: 400;
+    margin-left: 61px;
+    margin-top: 25px;
+    border: 1px solid red;
 }

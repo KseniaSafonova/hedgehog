@@ -23,12 +23,11 @@
         <header class="header">
             <div class="header__logo"><img src="/assets/images/Logo.svg" alt="Hedgehog"></div>
             <nav class="header__nav">
-                <select><a href="">КАТАЛОГ</a>
-                    <option value="ЁЖИКИ"><a href="#">ЁЖИКИ</a></option>
-                    <option value="ПИТАНИЕ"><a href="">ПИТАНИЕ</a></option>
-                    <option value="ПЕРЕНОСКИ"><a href="">ПЕРЕНОСКИ</a></option>
-                    <option value="ЛЕКАРСТВА"><a href="">ЛЕКАРСТВА</a></option>
-                </select>
+                <a href="">КАТАЛОГ</a>
+                <!-- <a href="#">ЁЖИКИ</a>
+                <a href="">ПИТАНИЕ</a>
+                <a href="">ПЕРЕНОСКИ</a>
+                <a href="">ЛЕКАРСТВА</a> -->
                 <a href="">О НАС</a>
                 <a href="">КОНТАКТЫ</a>
                 <a href="">ГАЛЕРЕЯ</a>
@@ -47,7 +46,7 @@
                 <div class="main__title__text1">ТОЖЕ ЛЮБЯТ МОЛОКО</div>
                 <div class="main__title__text2">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и
                     царапать вашу мебель.</div>
-                <div><button class="main__title__mainButton">Купить ёжика</button></div>
+                <div><button class="main__title_mainButton">Купить ёжика</button></div>
             </section>
             <section class="main__about">
                 <div class="hedgehogLeft"><img src="/assets/images/hedgehogLeft.png" alt=""></div>
@@ -80,8 +79,36 @@
         </main>
     </div>
     <section class="main__cards">
-        <div>Евгений</div>
-        <div>Максим</div>
+        <div class="main__cards_leftCard">
+            <div class="main__cards_leftBlock">
+                <div class="main_cards_discount">-50%</div>
+                <p class="main__cards_title">Ежик "Евгений"</p>
+                <p class="main__cards_text">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между
+                    собой.
+                    Ручной, любит внимаение </p>
+                <p class="main__cards_price1">3 000 ₽</p>
+                <p class="main__cards_price2">1 500 ₽</p>
+            </div>
+            <div class="main__cards_rightBlock">
+                <img src="/assets/images/info.svg" alt="info">
+                <img src="/assets/images/Evgeny.png" alt="">
+            </div>
+        </div>
+        <div class="main__cards_rightCard">
+            <div class="main__cards_leftBlock">
+                <div class="main_cards_discount">-50%</div>
+                <p class="main__cards_title">Ежик "Максим"</p>
+                <p class="main__cards_text">Немного игривый и задорный характер этого друга никого не оставит
+                    равнодушным!
+                </p>
+                <p class="main__cards_price1">5 000 ₽</p>
+                <p class="main__cards_price2">2 500 ₽</p>
+            </div>
+            <div class="main__cards_rightBlock">
+                <img src="/assets/images/info.svg" alt="info">
+                <img src="/assets/images/Maksim.png" alt="">
+            </div>
+        </div>
     </section>
     <section class="main__form">
         <div class="main__form_form">
@@ -113,25 +140,41 @@
                 <input type="text" placeholder="Ваш e-mail" class="main__form_input">
             </div>
             <div>
-                <input type="text" placeholder="Комментарий к заявке"></textarea>
+                <input type="text" placeholder="Комментарий к заявке" class="main__form_textarea"></textarea>
             </div>
-            <div><button class="mainButton">Купить ёжика</button></div>
+            <div class="main__form_mainButtonblock"><button class="main__form_mainButton">Купить ёжика</button></div>
         </div>
     </section>
     <section class="main__count">
-        <div>У на осталось еще: 25 ёжиков</div>
-        <div>Торопитесь! Акция действует до 26. 02. 2023</div>
+
+        <div class="main__count_title">
+            <img src="/assets/images/hedgehogDark.svg" alt="hedgehog">
+            <p>У на осталось еще: <a href="">25 ёжиков</a></p>
+        </div>
+        <div class="main__count_text">Торопитесь! Акция действует до 26. 02. 2023</div>
     </section>
-    <footer>
-        <div class="footer__logo"><img src="/assets/images/Logo.svg" alt="Hedgehog"></div>
-        <nav>
-            <a href="">КАТАЛОГ</a>
-            <a href="">О НАС</a>
-            <a href="">КОНТАКТЫ</a>
-            <a href="">ГАЛЕРЕЯ</a>
-        </nav>
-        <div class="footer__socialNetworks"></div>
-        <div class="footer__phoneNumber">+7 (965) 569-89-98</div>
+    <footer class="footer">
+        <div class="footer__topBlock">
+            <div class="footer__logo">
+                <img src="/assets/images/LogoWhite.svg" alt="Hedgehog">
+            </div>
+            <nav class="footer__nav">
+                <a href="">КАТАЛОГ</a>
+                <a href="">О НАС</a>
+                <a href="">КОНТАКТЫ</a>
+                <a href="">ГАЛЕРЕЯ</a>
+            </nav>
+            <div class="footer__socialNetworks">
+                <img src="/assets/images/instagram.svg" alt="instagram">
+                <img src="/assets/images/facebook.svg" alt="facebook">
+                <img src="/assets/images/twitter.svg" alt="twitter">
+            </div>
+            <div class="footer__phoneNumber">+7 (965) 569-89-98</div>
+        </div>
+        <div class="footer__bottomBlock">
+            Все права защищены. <br>
+            Указанная стоимость товаров и условия их приобретения действительны на текущую дату.
+        </div>
     </footer>
 </body>
 
