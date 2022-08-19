@@ -8,6 +8,12 @@
     <title>Hedgehog</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <!-- Разобраться с выпадающим списком, выровнять ежей (flex - align-self) -->
@@ -78,27 +84,39 @@
         <div>Максим</div>
     </section>
     <section class="main__form">
-        <div>Заполните заявку и мы забронируем для Вас нового друга</div>
-        <div>
-            <button class="main__form_buttonActive">хочу ёжика для себя</button>
-            <button class="main__form_button">хочу ёжика для детей</button>
-            <button class="main__form_button">хочу ёжика для разведения</button>
+        <div class="main__form_form">
+            <div class="main__form_formTitle">Заполните заявку и мы забронируем для Вас нового друга</div>
+            <div class="main__form_topBlock">
+                <div class="main__form_buttonBlock">
+                    <button class="main__form_button">хочу ёжика для себя</button>
+                    <button class="main__form_button">хочу ёжика для детей</button>
+                    <button class="main__form_button">хочу ёжика для разведения</button>
+                </div>
+                <div class="main__form_radioBlock">
+                    <div><input type="radio" class="radio">
+                        <span class="radioText">Мне нужен 1-2 ёжика</span>
+                    </div>
+                    <div><input type="radio" class="radio">
+                        <span class="radioText">Мне нужны 3 и более ёжиков</span>
+                    </div>
+                    <div><input type="radio" class="radio">
+                        <span class="radioText">Мне нужны 3-4 ёжика</span>
+                    </div>
+                    <div><input type="radio" class="radio">
+                        <span class="radioText">Пока присматриваюсь</span>
+                    </div>
+                </div>
+            </div>
+            <div class="main__form_bottomBlock">
+                <input type="text" placeholder="Ваше имя" class="main__form_input">
+                <input type="text" placeholder="Ваш телефон" class="main__form_input">
+                <input type="text" placeholder="Ваш e-mail" class="main__form_input">
+            </div>
+            <div>
+                <input type="text" placeholder="Комментарий к заявке"></textarea>
+            </div>
+            <div><button class="mainButton">Купить ёжика</button></div>
         </div>
-        <div>
-            <input type="radio">Мне нужен 1-2 ёжика
-            <input type="radio">Мне нужны 3-4 ёжика
-            <input type="radio">Мне нужны 3 и более ёжиков
-            <input type="radio">Пока присматриваюсь
-        </div>
-        <div>
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Ваш телефон">
-            <input type="text" placeholder="Ваш e-mail">
-        </div>
-        <div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий к заявке"></textarea>
-        </div>
-        <div><button class="mainButton">Купить ёжика</button></div>
     </section>
     <section class="main__count">
         <div>У на осталось еще: 25 ёжиков</div>

@@ -7,7 +7,7 @@ $darkgray: #195557;
 
 .mainContainer {
     background-image: url(/assets/images/Subtract.jpg);
-    // background-repeat: no-repeat;
+    // background-repeat: repeat-x;
     width: 1920px;
     background-size: contain;
     height: 992px;
@@ -175,18 +175,86 @@ $darkgray: #195557;
     color: $darkgray;
 }
 
+.main__form {
+    margin-left: 363px;
+}
 
-.main__form_buttonActive {
+.main__form_form {
+    height: 484px;
+    width: 1197px;
+    border-radius: 30px;
+    background-color: #EAEEEF;
+}
+
+.main__form_formTitle {
+    font-family: 'Cormorant Infant';
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 54px;
+    height: 54px;
+    color: $darkgray;
+    padding-left: 50px;
+    margin-top: 39px;
+}
+
+.main__form_topBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__form_buttonBlock {}
+
+.main__form_radioBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 53px;
+    float: right;
+    margin-top: 20px;
+    font-family: 'Cormorant Infant';
+    font-size: 14px;
+    font-weight: 700;
+    color: $gray;
+    margin-right: 113px;
+}
+
+.radio {
+    width: 14px;
+    border-color: $gray;
+    background-color: #EAEEEF;
+    margin-right: 7px;
+    margin-top: 10px;
+}
+
+.radioText {
+    display: block;
+    margin-top: -18px;
+    margin-left: 20px;
+}
+
+.main__form_bottomBlock {}
+
+.main__form_input {
+    height: 62px;
+    width: 352px;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin-top: 43px;
+    border: none;
     box-sizing: border-box;
-    width: 170px;
-    height: 49px;
-    color: #FFFFFF;
-    background: $gray;
-    border: 2px solid $gray;
-    border-radius: 61px;
+    margin-left: 20px;
+    color: $darkgray;
+    padding-left: 27px;
+
+    &:nth-child(1) {
+        margin-left: 49px;
+    }
 }
 
 .main__form_button {
+    font-family: 'Cormorant Infant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
     box-sizing: border-box;
     width: 170px;
     height: 49px;
@@ -194,4 +262,18 @@ $darkgray: #195557;
     background-color: #FFFFFF;
     border: 2px solid $gray;
     border-radius: 61px;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 14px;
+
+
+    &:nth-child(1) {
+        background-color: $gray;
+        color: #FFFFFF;
+        margin-left: 49px;
+    }
+
+    &:nth-child(3) {
+        width: 199px;
+    }
 }
