@@ -26,6 +26,17 @@ $darkgray: #195557;
     font-size: 16px;
     height: 20px;
     margin-left: 589px;
+    box-sizing: border-box;
+}
+
+.header__nav_openList {
+    width: 0px;
+    height: 0px;
+    border-top: 6px solid transparent;
+    border-left: 8px solid $darkgray;
+    border-bottom: 6px solid transparent;
+    margin-left: -15px;
+    margin-bottom: -15px;
 }
 
 .header__nav a {
