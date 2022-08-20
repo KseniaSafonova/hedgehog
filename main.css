@@ -258,8 +258,6 @@
   width: 570px;
   height: 397px;
   background: #FFEDCD;
-  -webkit-box-shadow: 4px 4px 40px #F1F1F1;
-          box-shadow: 4px 4px 40px #F1F1F1;
   border-radius: 20px;
   display: -ms-grid;
   display: grid;
@@ -267,14 +265,14 @@
       grid-template-columns: 1fr 1fr;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
 .main__cards_rightCard {
   width: 570px;
   height: 397px;
   background: #E2F0DF;
-  -webkit-box-shadow: 4px 4px 40px #F1F1F1;
-          box-shadow: 4px 4px 40px #F1F1F1;
   border-radius: 20px;
   margin-left: 39px;
   display: -ms-grid;
@@ -283,6 +281,8 @@
       grid-template-columns: 1fr 1fr;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
 .main__cards_leftBlock {
@@ -291,15 +291,26 @@
 
 .main__cards_rightBlock {
   margin-left: -70px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .main__cards_rightBlock img:nth-child(1) {
-  margin-top: 21px;
-  margin-left: 300px;
+  margin-bottom: -50px;
+  margin-left: 310px;
 }
 
-.main__cards_rightBlock img:nth-child(3) {
+.main__cards_rightBlock img:nth-child(2) {
+  margin-top: 75px;
+}
+
+.main__cards_rightBlockEllipse1 {
   margin-top: -70px;
+  margin-left: 15px;
+}
+
+.main__cards_rightBlockEllipse2 {
+  margin-top: -110px;
   margin-left: 15px;
 }
 
@@ -359,9 +370,44 @@
   margin-top: 0;
 }
 
+.main__cards_addBlockright {
+  width: 230px;
+  height: 144px;
+  margin-left: 240px;
+  margin-top: -50px;
+  background: #FFFFFF;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.main__cards_addBlockleft {
+  width: 230px;
+  height: 144px;
+  margin-left: 240px;
+  margin-top: -40px;
+  background: #FFFFFF;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.main__cards_addBlockright img {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border: 1px solid red;
+}
+
+.main__cards_addBlockleft img {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border: 1px solid red;
+  width: 26px;
+}
+
 .main__form {
   margin-left: 363px;
   margin-top: 93px;
+  position: relative;
+  z-index: 1;
 }
 
 .main__form_form {
