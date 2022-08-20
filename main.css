@@ -9,18 +9,32 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .header__logo {
   margin-top: 35px;
+  margin-left: 61px;
 }
 
 .header__nav {
   margin-top: 69px;
   font-size: 16px;
   height: 20px;
+  margin-left: 589px;
+}
+
+.header__nav a {
+  margin-left: 89px;
+  font-family: 'Cormorant Infant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #195557;
+  text-decoration: none;
+}
+
+.header__nav a:nth-child(2) {
+  margin-left: 0px;
 }
 
 .header__phoneNumber {
@@ -38,6 +52,7 @@
   width: 69px;
   border-radius: 40px;
   border-style: none;
+  margin-left: 132px;
 }
 
 .header__phoneNumber__number {
@@ -50,10 +65,41 @@
   color: #195557;
   margin-top: 21px;
   margin-left: 20px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .header__basket {
-  margin-top: 64px;
+  margin-left: 80px;
+  height: 33px;
+}
+
+.header__basket img {
+  margin-top: -15px;
+  z-index: 0;
+  position: relative;
+}
+
+.header__basket_number {
+  border-radius: 50%;
+  background-color: #FFEDCD;
+  width: 19px;
+  height: 19px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  padding-top: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-font-feature-settings: 'tnum' on, 'lnum' on;
+          font-feature-settings: 'tnum' on, 'lnum' on;
+  margin-left: 25px;
+  margin-top: 55px;
+  position: relative;
+  z-index: 1;
 }
 
 .main__title {
@@ -184,7 +230,7 @@
 }
 
 .hedgehogRight {
-  margin-left: -80px;
+  margin-left: -85px;
   margin-top: 120px;
 }
 

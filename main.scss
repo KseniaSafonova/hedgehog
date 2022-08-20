@@ -7,7 +7,6 @@ $darkgray: #195557;
 
 .mainContainer {
     background-image: url(/assets/images/Subtract.jpg);
-    // background-repeat: repeat-x;
     width: 1920px;
     background-size: contain;
     height: 992px;
@@ -15,17 +14,32 @@ $darkgray: #195557;
 
 .header {
     display: flex;
-    justify-content: space-around;
 }
 
 .header__logo {
     margin-top: 35px;
+    margin-left: 61px;
 }
 
 .header__nav {
     margin-top: 69px;
     font-size: 16px;
     height: 20px;
+    margin-left: 589px;
+}
+
+.header__nav a {
+    margin-left: 89px;
+    font-family: 'Cormorant Infant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: $darkgray;
+    text-decoration: none;
+
+    &:nth-child(2) {
+        margin-left: 0px;
+    }
 }
 
 .header__phoneNumber {
@@ -40,6 +54,7 @@ $darkgray: #195557;
     width: 69px;
     border-radius: 40px;
     border-style: none;
+    margin-left: 132px;
 }
 
 .header__phoneNumber__number {
@@ -52,10 +67,38 @@ $darkgray: #195557;
     color: $darkgray;
     margin-top: 21px;
     margin-left: 20px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .header__basket {
-    margin-top: 64px;
+    margin-left: 80px;
+    height: 33px;
+}
+
+.header__basket img {
+    margin-top: -15px;
+    z-index: 0;
+    position: relative;
+}
+
+.header__basket_number {
+    border-radius: 50%;
+    background-color: $lightpink;
+    width: 19px;
+    height: 19px;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    padding-top: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    margin-left: 25px;
+    margin-top: 55px;
+    position: relative;
+    z-index: 1;
 }
 
 .main__title {
@@ -177,7 +220,7 @@ $darkgray: #195557;
 }
 
 .hedgehogRight {
-    margin-left: -80px;
+    margin-left: -85px;
     margin-top: 120px;
 }
 
