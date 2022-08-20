@@ -513,9 +513,8 @@ $darkgray: #195557;
 }
 
 .footer__nav {
-    margin-left: 520px;
+    margin-left: 610px;
     margin-top: 78px;
-    width: 640px;
 }
 
 .footer__nav a {
@@ -528,11 +527,15 @@ $darkgray: #195557;
     color: #FFFFFF;
     text-decoration: none;
     margin-left: 85px;
+
+    &:nth-child(1) {
+        margin-left: 0;
+    }
 }
 
 .footer__socialNetworks {
     width: 160px;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 .footer__socialNetworks img {

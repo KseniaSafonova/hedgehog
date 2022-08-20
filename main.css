@@ -546,9 +546,8 @@
 }
 
 .footer__nav {
-  margin-left: 520px;
+  margin-left: 610px;
   margin-top: 78px;
-  width: 640px;
 }
 
 .footer__nav a {
@@ -563,9 +562,13 @@
   margin-left: 85px;
 }
 
+.footer__nav a:nth-child(1) {
+  margin-left: 0;
+}
+
 .footer__socialNetworks {
   width: 160px;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 
 .footer__socialNetworks img {
