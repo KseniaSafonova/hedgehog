@@ -16,23 +16,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&family=Raleway&display=swap" rel="stylesheet">
 </head>
 
-<!-- Разобраться с выпадающим списком, доделать header, доделать карточки -->
+<!-- Разобраться с выпадающим списком -->
 
 <body>
     <div class="mainContainer">
         <header class="header">
             <div class="header__logo"><img src="/assets/images/Logo.svg" alt="Hedgehog"></div>
             <nav class="header__nav">
-                <!-- <img src="/assets/images/vector.svg" alt=""> -->
-                <div class="header__nav_openList"></div>
-                <a href="">КАТАЛОГ</a>
-                <!-- <a href="#">ЁЖИКИ</a>
-                <a href="">ПИТАНИЕ</a>
-                <a href="">ПЕРЕНОСКИ</a>
-                <a href="">ЛЕКАРСТВА</a> -->
-                <a href="">О НАС</a>
-                <a href="">КОНТАКТЫ</a>
-                <a href="">ГАЛЕРЕЯ</a>
+                <div id="header__nav_closedList"></div>
+                <div id="header__nav_openedList"></div>
+                <button id="openList" onblur="closeList()">КАТАЛОГ</button>
+                <div id="header__nav_list">
+                    <p><a href="#">ЁЖИКИ</a></p>
+                    <p><a href="#">ПИТАНИЕ</a></p>
+                    <p><a href="#">ПЕРЕНОСКИ</a></p>
+                    <p><a href="#">ЛЕКАРСТВА</a></p>
+                </div>
+                <a class="header__nav_a" href="">О НАС</a>
+                <a class="header__nav_a" href="">КОНТАКТЫ</a>
+                <a class="header__nav_a" href="">ГАЛЕРЕЯ</a>
             </nav>
             <div class="header__phoneNumber">
                 <button class="header__phoneNumber__button">
@@ -96,7 +98,7 @@
                 <p class="main__cards_price2">1 500 ₽</p>
             </div>
             <div class="main__cards_rightBlock">
-                <img src="/assets/images/info.svg" alt="info">
+                <img src="/assets/images/info.svg" alt="info" id="openInfo">
                 <img src="/assets/images/Evgeny.png" alt="Evgeny">
                 <img src="/assets/images/Ellipse.png" alt="" class="main__cards_rightBlockEllipse1">
                 <div class="main__cards_addBlockLeft">
@@ -115,7 +117,7 @@
                 <p class="main__cards_price2">2 500 ₽</p>
             </div>
             <div class="main__cards_rightBlock">
-                <img src="/assets/images/info.svg" alt="info">
+                <img src="/assets/images/info.svg" alt="info" id="openInfo">
                 <img src="/assets/images/Maksim.png" alt="Maksim">
                 <img src="/assets/images/Ellipse.png" alt="" class="main__cards_rightBlockEllipse2">
                 <div class="main__cards_addBlockRight">
@@ -191,6 +193,24 @@
             Указанная стоимость товаров и условия их приобретения действительны на текущую дату.
         </div>
     </footer>
+    <script>
+        let list = document.getElementById('header__nav_list');
+        let openList = document.getElementById('openList')
+        let closeTriangle = document.getElementById('header__nav_closedList')
+        let openTriangle = document.getElementById('header__nav_openedList')
+
+        openList.onclick = function () {
+            list.style.display = "block";
+            closeTriangle.style.display = "none"
+            openTriangle.style.display = "block"
+        }
+
+        function closeList() {
+            list.style.display = "none";
+            openTriangle.style.display = "none"
+            closeTriangle.style.display = "block"
+        }
+    </script>
 </body>
 
 </html>

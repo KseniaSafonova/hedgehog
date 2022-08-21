@@ -25,7 +25,7 @@
           box-sizing: border-box;
 }
 
-.header__nav_openList {
+#header__nav_closedList {
   width: 0px;
   height: 0px;
   border-top: 6px solid transparent;
@@ -35,7 +35,32 @@
   margin-bottom: -15px;
 }
 
-.header__nav a {
+#header__nav_openedList {
+  display: none;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #195557;
+  margin-left: -15px;
+  margin-bottom: -15px;
+}
+
+#openList {
+  border: none;
+  font-family: 'Cormorant Infant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #195557;
+  background-color: #EAEEEF;
+}
+
+#openList:hover {
+  border-bottom: 1px solid #195557;
+}
+
+.header__nav_a {
   margin-left: 89px;
   font-family: 'Cormorant Infant';
   font-style: normal;
@@ -45,8 +70,43 @@
   text-decoration: none;
 }
 
-.header__nav a:nth-child(2) {
+.header__nav_a:nth-child(2) {
   margin-left: 0px;
+}
+
+.header__nav_a:hover {
+  border-bottom: 1px solid #195557;
+}
+
+#header__nav_list {
+  display: none;
+  z-index: 1;
+  height: 173px;
+  width: 169px;
+  position: fixed;
+  border-radius: 8px;
+  margin-left: -20px;
+  margin-top: 20px;
+  background: #FFFEFE;
+  -webkit-box-shadow: 4px 4px 20px #C2CCCA;
+          box-shadow: 4px 4px 20px #C2CCCA;
+}
+
+#header__nav_list p {
+  margin-top: 19px;
+  margin-left: 24px;
+}
+
+#header__nav_list a {
+  font-family: 'Cormorant Infant';
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #195557;
+}
+
+#header__nav_list a:hover {
+  border-bottom: 1px solid #195557;
 }
 
 .header__phoneNumber {
