@@ -99,6 +99,17 @@
             </div>
             <div class="main__cards_rightBlock">
                 <img src="/assets/images/info.svg" alt="info" id="openInfo">
+                <div id="hedgehogInfoTriangle"></div>
+                <div id="hedgehogInfoRectangle">
+                    <div>
+                        <!-- <img src="/assets/images/vaccinated.svg" alt=""> -->
+                    </div>
+                    <div>привит</div>
+                    <div>
+                        <!-- <img src="/assets/images/likes.svg" alt=""> -->
+                    </div>
+                    <div>1000</div>
+                </div>
                 <img src="/assets/images/Evgeny.png" alt="Evgeny">
                 <img src="/assets/images/Ellipse.png" alt="" class="main__cards_rightBlockEllipse1">
                 <div class="main__cards_addBlockLeft">
@@ -118,6 +129,18 @@
             </div>
             <div class="main__cards_rightBlock">
                 <img src="/assets/images/info.svg" alt="info" id="openInfo">
+
+                <div id="hedgehogInfoTriangle"></div>
+                <div id="hedgehogInfoRectangle">
+                    <div>
+                        <!-- <img src="/assets/images/vaccinated.svg" alt=""> -->
+                    </div>
+                    <div>привит</div>
+                    <div>
+                        <!-- <img src="/assets/images/likes.svg" alt=""> -->
+                    </div>
+                    <div>1200</div>
+                </div>
                 <img src="/assets/images/Maksim.png" alt="Maksim">
                 <img src="/assets/images/Ellipse.png" alt="" class="main__cards_rightBlockEllipse2">
                 <div class="main__cards_addBlockRight">
@@ -195,9 +218,9 @@
     </footer>
     <script>
         let list = document.getElementById('header__nav_list');
-        let openList = document.getElementById('openList')
-        let closeTriangle = document.getElementById('header__nav_closedList')
-        let openTriangle = document.getElementById('header__nav_openedList')
+        let openList = document.getElementById('openList');
+        let closeTriangle = document.getElementById('header__nav_closedList');
+        let openTriangle = document.getElementById('header__nav_openedList');
 
         openList.onclick = function () {
             list.style.display = "block";
@@ -210,6 +233,10 @@
             openTriangle.style.display = "none"
             closeTriangle.style.display = "block"
         }
+
+        let openInfo = document.getElementById('openInfo');
+
+
     </script>
 </body>
 

@@ -23,6 +23,7 @@
   margin-left: 589px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 0;
 }
 
 #header__nav_closedList {
@@ -83,13 +84,15 @@
   z-index: 1;
   height: 173px;
   width: 169px;
-  position: fixed;
   border-radius: 8px;
   margin-left: -20px;
   margin-top: 20px;
   background: #FFFEFE;
   -webkit-box-shadow: 4px 4px 20px #C2CCCA;
           box-shadow: 4px 4px 20px #C2CCCA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
 }
 
 #header__nav_list p {
@@ -342,7 +345,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 .main__cards_leftBlock {
@@ -472,6 +475,64 @@
 
 .main__cards_arrowRight {
   margin-left: 35px;
+}
+
+#hedgehogInfoRectangle {
+  background-color: #195557;
+  height: 88px;
+  width: 220px;
+  margin-left: 220px;
+  position: absolute;
+  z-index: 2;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Raleway';
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+#hedgehogInfoTriangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 10px solid #195557;
+  margin-left: 307px;
+  margin-top: 50px;
+}
+
+#hedgehogInfoRectangle div:nth-child(1) {
+  background-image: url("/assets/images/vaccinated.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+  padding-top: 10px;
+}
+
+#hedgehogInfoRectangle div:nth-child(2) {
+  width: 50px;
+  height: 30px;
+}
+
+#hedgehogInfoRectangle div:nth-child(3) {
+  background-image: url("/assets/images/likes.svg");
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+#hedgehogInfoRectangle div:nth-child(4) {
+  width: 50px;
+  height: 30px;
 }
 
 .main__form {
