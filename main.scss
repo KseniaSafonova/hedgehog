@@ -337,7 +337,6 @@ $darkgray: #195557;
     color: #C2CCCA;
     margin-top: 7px;
     margin-bottom: 0px;
-
 }
 
 .main__cards_price2 {
@@ -350,36 +349,45 @@ $darkgray: #195557;
     margin-top: 0;
 }
 
-.main__cards_addBlockright {
-    width: 230px;
-    height: 144px;
-    margin-left: 240px;
-    margin-top: -50px;
-    background: #FFFFFF;
-    transform: rotate(-45deg);
-}
-
-.main__cards_addBlockleft {
+.main__cards_addBlockRight {
     width: 230px;
     height: 144px;
     margin-left: 240px;
     margin-top: -40px;
     background: #FFFFFF;
     transform: rotate(-45deg);
-    // background-image: url('/assets/images/+.svg');
-    // background-repeat: no-repeat;
+    box-sizing: border-box;
 }
 
-.main__cards_addBlockright img {
-    transform: rotate(45deg);
-    border: 1px solid red;
+.main__cards_addBlockLeft {
+    width: 230px;
+    height: 144px;
+    margin-left: 240px;
+    margin-top: -40px;
+    background: #FFFFFF;
+    transform: rotate(-45deg);
+    box-sizing: border-box;
 }
 
-.main__cards_addBlockleft img {
+.main__cards_addBlockRight div,
+.main__cards_addBlockLeft div {
+    width: 27px;
+    height: 27px;
+    background-image: url(/assets/images/+.svg);
     transform: rotate(45deg);
-    border: 1px solid red;
-    width: 26px;
+    margin-left: 110px;
+    padding-top: 120px;
+    background-repeat: no-repeat;
 }
+
+.main__cards_arrowLeft {
+    margin-right: 35px;
+}
+
+.main__cards_arrowRight {
+    margin-left: 35px;
+}
+
 
 .main__form {
     margin-left: 363px;
