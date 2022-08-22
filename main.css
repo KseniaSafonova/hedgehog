@@ -345,7 +345,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  z-index: 0;
+  z-index: 2;
 }
 
 .main__cards_leftBlock {
@@ -477,17 +477,16 @@
   margin-left: 35px;
 }
 
-#hedgehogInfoRectangle {
+#hedgehogInfoRectangleRight,
+#hedgehogInfoRectangleLeft {
+  display: none;
   background-color: #195557;
   height: 88px;
   width: 220px;
   margin-left: 220px;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -498,7 +497,9 @@
           font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
-#hedgehogInfoTriangle {
+#hedgehogInfoTriangleRight,
+#hedgehogInfoTriangleLeft {
+  display: none;
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
@@ -508,7 +509,7 @@
   margin-top: 50px;
 }
 
-#hedgehogInfoRectangle div:nth-child(1) {
+.hedgehogInfoRectangle div:nth-child(1) {
   background-image: url("/assets/images/vaccinated.svg");
   background-repeat: no-repeat;
   width: 30px;
@@ -517,21 +518,18 @@
   padding-top: 10px;
 }
 
-#hedgehogInfoRectangle div:nth-child(2) {
+.hedgehogInfoRectangle_contentRight,
+.hedgehogInfoRectangle_contentLeft {
+  display: none;
   width: 50px;
   height: 30px;
 }
 
-#hedgehogInfoRectangle div:nth-child(3) {
+.hedgehogInfoRectangle div:nth-child(3) {
   background-image: url("/assets/images/likes.svg");
   background-repeat: no-repeat;
   margin-left: 30px;
   width: 30px;
-  height: 30px;
-}
-
-#hedgehogInfoRectangle div:nth-child(4) {
-  width: 50px;
   height: 30px;
 }
 

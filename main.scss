@@ -322,7 +322,7 @@ $darkgray: #195557;
     grid-template-columns: 1fr 1fr;
     box-sizing: border-box;
     position: relative;
-    z-index: 0;
+    z-index: 2;
 }
 
 .main__cards_leftBlock {
@@ -446,16 +446,17 @@ $darkgray: #195557;
     margin-left: 35px;
 }
 
-#hedgehogInfoRectangle {
-    // display: none;
+#hedgehogInfoRectangleRight,
+#hedgehogInfoRectangleLeft {
+    // display: flex;
+    display: none;
     background-color: $darkgray;
     height: 88px;
     width: 220px;
     margin-left: 220px;
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     color: #FFFFFF;
-    display: flex;
     align-items: center;
     font-family: 'Raleway';
     font-size: 14px;
@@ -463,8 +464,9 @@ $darkgray: #195557;
     font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
-#hedgehogInfoTriangle {
-    // display: none;
+#hedgehogInfoTriangleRight,
+#hedgehogInfoTriangleLeft {
+    display: none;
     width: 0;
     height: 0;
     border-left: 20px solid transparent;
@@ -474,7 +476,7 @@ $darkgray: #195557;
     margin-top: 50px;
 }
 
-#hedgehogInfoRectangle div:nth-child(1) {
+.hedgehogInfoRectangle div:nth-child(1) {
     background-image: url('/assets/images/vaccinated.svg');
     background-repeat: no-repeat;
     width: 30px;
@@ -483,21 +485,18 @@ $darkgray: #195557;
     padding-top: 10px;
 }
 
-#hedgehogInfoRectangle div:nth-child(2) {
+.hedgehogInfoRectangle_contentRight,
+.hedgehogInfoRectangle_contentLeft {
+    display: none;
     width: 50px;
     height: 30px;
 }
 
-#hedgehogInfoRectangle div:nth-child(3) {
+.hedgehogInfoRectangle div:nth-child(3) {
     background-image: url('/assets/images/likes.svg');
     background-repeat: no-repeat;
     margin-left: 30px;
     width: 30px;
-    height: 30px;
-}
-
-#hedgehogInfoRectangle div:nth-child(4) {
-    width: 50px;
     height: 30px;
 }
 

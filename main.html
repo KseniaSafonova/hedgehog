@@ -98,17 +98,17 @@
                 <p class="main__cards_price2">1 500 ₽</p>
             </div>
             <div class="main__cards_rightBlock">
-                <img src="/assets/images/info.svg" alt="info" id="openInfo">
-                <div id="hedgehogInfoTriangle"></div>
-                <div id="hedgehogInfoRectangle">
+                <img src="/assets/images/info.png" alt="info" id="openInfoLeft">
+                <div id="hedgehogInfoTriangleLeft"></div>
+                <div id="hedgehogInfoRectangleLeft">
                     <div>
                         <!-- <img src="/assets/images/vaccinated.svg" alt=""> -->
                     </div>
-                    <div>привит</div>
+                    <div class="hedgehogInfoRectangle_contentLeft">привит</div>
                     <div>
                         <!-- <img src="/assets/images/likes.svg" alt=""> -->
                     </div>
-                    <div>1000</div>
+                    <div class="hedgehogInfoRectangle_contentLeft">1000</div>
                 </div>
                 <img src="/assets/images/Evgeny.png" alt="Evgeny">
                 <img src="/assets/images/Ellipse.png" alt="" class="main__cards_rightBlockEllipse1">
@@ -128,18 +128,18 @@
                 <p class="main__cards_price2">2 500 ₽</p>
             </div>
             <div class="main__cards_rightBlock">
-                <img src="/assets/images/info.svg" alt="info" id="openInfo">
-
-                <div id="hedgehogInfoTriangle"></div>
-                <div id="hedgehogInfoRectangle">
+                <img src="/assets/images/info.png" onclick="openInfoRight()" id="openInfoRight">
+                <div id=" hedgehogInfoTriangleRight">
+                </div>
+                <div id="hedgehogInfoRectangleRight">
                     <div>
                         <!-- <img src="/assets/images/vaccinated.svg" alt=""> -->
                     </div>
-                    <div>привит</div>
+                    <div class="hedgehogInfoRectangle_contentRight">привит</div>
                     <div>
                         <!-- <img src="/assets/images/likes.svg" alt=""> -->
                     </div>
-                    <div>1200</div>
+                    <div class="hedgehogInfoRectangle_contentRight">1200</div>
                 </div>
                 <img src="/assets/images/Maksim.png" alt="Maksim">
                 <img src="/assets/images/Ellipse.png" alt="" class="main__cards_rightBlockEllipse2">
@@ -234,7 +234,16 @@
             closeTriangle.style.display = "block"
         }
 
-        let openInfo = document.getElementById('openInfo');
+        let infoRectangleRight = document.getElementById('hedgehogInfoRectangle');
+        let infoTriangleRight = document.getElementById('hedgehogInfoTriangleRight');
+        let infoRectangleContentRight = document.querySelectorAll('hedgehogInfoRectangle_contentRight');
+
+        function openInfoRight() {
+            // infoRectangleRight.style.display = "flex";
+            console.log('111')
+            // infoTriangleRight.style.display = "block";
+            // infoRectangleContentRight.style.display = "block"
+        }
 
 
     </script>
