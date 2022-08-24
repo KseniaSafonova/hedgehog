@@ -296,7 +296,8 @@ $darkgray: #195557;
 
 .main__cards {
     display: flex;
-    padding-left: 370px;
+    // padding-left: 370px;
+    padding-left: 300px;
     margin-top: 100px;
 }
 
@@ -334,50 +335,29 @@ $darkgray: #195557;
     box-sizing: border-box;
 }
 
-// .main__cards_rightBlock img:nth-child(1) {
-//     // margin-bottom: -50px;
-//     // margin-left: 310px;
-//     border: 1px solid red;
-// }
-
 #openInfoRight {
-    margin-bottom: -50px;
+    margin-top: 20px;
     margin-left: 310px;
-    border: 1px solid red;
-    z-index: 2;
+    position: absolute;
+    // z-index: 4;
 }
 
 #openInfoLeft {
-    margin-bottom: -50px;
+    margin-top: 20px;
     margin-left: 310px;
-    border: 1px solid red;
-    z-index: 2;
+    position: absolute;
+    // z-index: 4;
 }
 
-// #openInfoRight {
-//     background-image: url('/assets/images/info.png');
-//     border: 1px solid red;
-//     margin-bottom: -50px;
-//     margin-left: 310px;
-//     position: relative;
-//     z-index: 3;
-//     width: 100px;
-//     height: 100px;
-// }
-
-
-
 .Evgeny {
-    margin-left: -200px;
-    margin-top: -20px;
-    border: 1px solid red;
-    z-index: 1;
+    margin-left: -190px;
+    margin-top: 0px;
+    // z-index: 1;
 }
 
 .Maksim {
-    margin-top: 80px;
-    border: 1px solid red;
-    z-index: 1;
+    padding-top: 100px;
+    // z-index: 1;
 }
 
 .main__cards_rightBlockEllipse {
@@ -440,25 +420,23 @@ $darkgray: #195557;
 }
 
 .main__cards_addBlockRight {
-    width: 230px;
+    width: 180px;
     height: 144px;
-    margin-left: 270px;
-    margin-top: -70px;
+    margin-left: 320px;
+    margin-top: -100px;
     background: #FFFFFF;
     transform: rotate(-45deg);
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 .main__cards_addBlockLeft {
     width: 230px;
     height: 144px;
-    margin-left: 270px;
-    margin-top: -90px;
+    margin-left: 290px;
+    margin-top: -100px;
     background: #FFFFFF;
     transform: rotate(-45deg);
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 .main__cards_addBlockRight div,
@@ -467,9 +445,14 @@ $darkgray: #195557;
     height: 27px;
     background-image: url(/assets/images/+.svg);
     transform: rotate(45deg);
-    margin-left: 50px;
+    margin-left: 40px;
     padding-top: 120px;
     background-repeat: no-repeat;
+}
+
+.main__cards_addBlockRight div {
+    margin-left: 20px;
+    padding-top: 90px;
 }
 
 .main__cards_arrowLeft {
@@ -482,14 +465,14 @@ $darkgray: #195557;
 
 #hedgehogInfoRectangleRight,
 #hedgehogInfoRectangleLeft {
-    // display: flex;
     display: none;
     background-color: $darkgray;
     height: 88px;
     width: 220px;
-    margin-left: 220px;
+    margin-left: 210px;
+    margin-top: 65px;
     position: absolute;
-    z-index: 4;
+    // z-index: 4;
     color: #FFFFFF;
     align-items: center;
     font-family: 'Raleway';
@@ -501,22 +484,24 @@ $darkgray: #195557;
 #hedgehogInfoTriangleRight,
 #hedgehogInfoTriangleLeft {
     display: none;
+    position: absolute;
     width: 0;
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 10px solid $darkgray;
     margin-left: 307px;
-    margin-top: 50px;
+    margin-top: 55px;
 }
 
-.hedgehogInfoRectangle div:nth-child(1) {
+#hedgehogInfoRectangle_imgLeft1,
+#hedgehogInfoRectangle_imgRight1 {
     background-image: url('/assets/images/vaccinated.svg');
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
     margin-left: 30px;
-    padding-top: 10px;
+    margin-top: 2px;
 }
 
 .hedgehogInfoRectangle_contentRight,
@@ -526,10 +511,12 @@ $darkgray: #195557;
     height: 30px;
 }
 
-.hedgehogInfoRectangle div:nth-child(3) {
+#hedgehogInfoRectangle_imgLeft2,
+#hedgehogInfoRectangle_imgRight2 {
     background-image: url('/assets/images/likes.svg');
     background-repeat: no-repeat;
     margin-left: 30px;
+    margin-top: 10px;
     width: 30px;
     height: 30px;
 }

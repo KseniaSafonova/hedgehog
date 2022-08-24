@@ -313,7 +313,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 370px;
+  padding-left: 300px;
   margin-top: 100px;
 }
 
@@ -359,30 +359,24 @@
 }
 
 #openInfoRight {
-  margin-bottom: -50px;
+  margin-top: 20px;
   margin-left: 310px;
-  border: 1px solid red;
-  z-index: 2;
+  position: absolute;
 }
 
 #openInfoLeft {
-  margin-bottom: -50px;
+  margin-top: 20px;
   margin-left: 310px;
-  border: 1px solid red;
-  z-index: 2;
+  position: absolute;
 }
 
 .Evgeny {
-  margin-left: -200px;
-  margin-top: -20px;
-  border: 1px solid red;
-  z-index: 1;
+  margin-left: -190px;
+  margin-top: 0px;
 }
 
 .Maksim {
-  margin-top: 80px;
-  border: 1px solid red;
-  z-index: 1;
+  padding-top: 100px;
 }
 
 .main__cards_rightBlockEllipse {
@@ -447,29 +441,27 @@
 }
 
 .main__cards_addBlockRight {
-  width: 230px;
+  width: 180px;
   height: 144px;
-  margin-left: 270px;
-  margin-top: -70px;
+  margin-left: 320px;
+  margin-top: -100px;
   background: #FFFFFF;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid red;
 }
 
 .main__cards_addBlockLeft {
   width: 230px;
   height: 144px;
-  margin-left: 270px;
-  margin-top: -90px;
+  margin-left: 290px;
+  margin-top: -100px;
   background: #FFFFFF;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid red;
 }
 
 .main__cards_addBlockRight div,
@@ -479,9 +471,14 @@
   background-image: url(/assets/images/+.svg);
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  margin-left: 50px;
+  margin-left: 40px;
   padding-top: 120px;
   background-repeat: no-repeat;
+}
+
+.main__cards_addBlockRight div {
+  margin-left: 20px;
+  padding-top: 90px;
 }
 
 .main__cards_arrowLeft {
@@ -498,9 +495,9 @@
   background-color: #195557;
   height: 88px;
   width: 220px;
-  margin-left: 220px;
+  margin-left: 210px;
+  margin-top: 65px;
   position: absolute;
-  z-index: 4;
   color: #FFFFFF;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -515,22 +512,24 @@
 #hedgehogInfoTriangleRight,
 #hedgehogInfoTriangleLeft {
   display: none;
+  position: absolute;
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 10px solid #195557;
   margin-left: 307px;
-  margin-top: 50px;
+  margin-top: 55px;
 }
 
-.hedgehogInfoRectangle div:nth-child(1) {
+#hedgehogInfoRectangle_imgLeft1,
+#hedgehogInfoRectangle_imgRight1 {
   background-image: url("/assets/images/vaccinated.svg");
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
   margin-left: 30px;
-  padding-top: 10px;
+  margin-top: 2px;
 }
 
 .hedgehogInfoRectangle_contentRight,
@@ -540,10 +539,12 @@
   height: 30px;
 }
 
-.hedgehogInfoRectangle div:nth-child(3) {
+#hedgehogInfoRectangle_imgLeft2,
+#hedgehogInfoRectangle_imgRight2 {
   background-image: url("/assets/images/likes.svg");
   background-repeat: no-repeat;
   margin-left: 30px;
+  margin-top: 10px;
   width: 30px;
   height: 30px;
 }

@@ -16,8 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&family=Raleway&display=swap" rel="stylesheet">
 </head>
 
-<!-- Разобраться с выпадающим списком -->
-
 <body>
     <div class="mainContainer">
         <header class="header">
@@ -98,19 +96,17 @@
                 <p class="main__cards_price2">1 500 ₽</p>
             </div>
             <div class="main__cards_rightBlock">
-                <img src="/assets/images/info.png" alt="info" id="openInfoLeft">
                 <div id="hedgehogInfoTriangleLeft"></div>
                 <div id="hedgehogInfoRectangleLeft">
-                    <div>
-                        <!-- <img src="/assets/images/vaccinated.svg" alt=""> -->
-                    </div>
-                    <div class="hedgehogInfoRectangle_contentLeft">привит</div>
-                    <div>
-                        <!-- <img src="/assets/images/likes.svg" alt=""> -->
-                    </div>
-                    <div class="hedgehogInfoRectangle_contentLeft">1000</div>
+                    <div id="hedgehogInfoRectangle_imgLeft1"></div>
+                    <div id="hedgehogInfoRectangle_textLeft1">привит</div>
+                    <div id="hedgehogInfoRectangle_imgLeft2"></div>
+                    <div id="hedgehogInfoRectangle_textLeft2">1000</div>
                 </div>
+                <!-- <img src="/assets/images/info.png" onclick="openInfoLeft()" onblur="closeInfoLeft()" id="openInfoLeft"> -->
+                <img src="/assets/images/info.png" onblur="closeInfoLeft()" id="openInfoLeft">
                 <img src="/assets/images/Evgeny.png" alt="Evgeny" class="Evgeny">
+
                 <div class="main__cards_addBlockLeft">
                     <div class="main__cards_addBlockLeftImg"></div>
                 </div>
@@ -127,21 +123,18 @@
                 <p class="main__cards_price2">2 500 ₽</p>
             </div>
             <div class="main__cards_rightBlock">
-                <img src="/assets/images/info.png" onclick="openInfoRight()" id="openInfoRight">
-                <div id=" hedgehogInfoTriangleRight">
+                <div id="hedgehogInfoTriangleRight">
                 </div>
                 <div id="hedgehogInfoRectangleRight">
-                    <div>
-                        <!-- <img src="/assets/images/vaccinated.svg" alt=""> -->
-                    </div>
-                    <div class="hedgehogInfoRectangle_contentRight">привит</div>
-                    <div>
-                        <!-- <img src="/assets/images/likes.svg" alt=""> -->
-                    </div>
-                    <div class="hedgehogInfoRectangle_contentRight">1200</div>
+                    <div id="hedgehogInfoRectangle_imgRight1"></div>
+                    <div id="hedgehogInfoRectangle_textRight1">привит</div>
+                    <div id="hedgehogInfoRectangle_imgRight2"></div>
+                    <div id="hedgehogInfoRectangle_textRight2">1200</div>
                 </div>
+                <img src="/assets/images/info.png" onblur="closeInfoRight()" id="openInfoRight">
                 <img src="/assets/images/Maksim.png" alt="Maksim" class="Maksim">
                 <img src="/assets/images/Ellipse.png" alt="" class="main__cards_rightBlockEllipse">
+
                 <div class="main__cards_addBlockRight">
                     <div></div>
                 </div>
@@ -233,16 +226,60 @@
             closeTriangle.style.display = "block"
         }
 
-        let infoRectangleRight = document.getElementById('hedgehogInfoRectangle');
+        let infoRectangleRight = document.getElementById('hedgehogInfoRectangleRight');
         let infoTriangleRight = document.getElementById('hedgehogInfoTriangleRight');
-        let infoRectangleContentRight = document.querySelectorAll('hedgehogInfoRectangle_contentRight');
+        let infoRectangleContentRight1 = document.querySelectorAll('hedgehogInfoRectangle_contentRight1');
+        let infoRectangleContentRight2 = document.querySelectorAll('hedgehogInfoRectangle_contentRight2');
 
-        function openInfoRight() {
-            alert('111')
-            // infoRectangleRight.style.display = "flex";
+        let infoRectangleLeft = document.getElementById('hedgehogInfoRectangleLeft');
+        let infoTriangleLeft = document.getElementById('hedgehogInfoTriangleLeft');
+        let infoRectangleContentLeft1 = document.getElementById('hedgehogInfoRectangle_contentLeft1');
+        let infoRectangleContentLeft2 = document.getElementById('hedgehogInfoRectangle_contentLeft2');
 
-            // infoTriangleRight.style.display = "block";
-            // infoRectangleContentRight.style.display = "block"
+        let openInfoLeft = document.getElementById('openInfoLeft');
+        let openInfoRight = document.getElementById('openInfoRight');
+
+        openInfoLeft.onclick = function () {
+            infoRectangleLeft.style.display = "flex";
+            infoTriangleLeft.style.display = "block";
+            infoRectangleContentLeft1.style.display = "block";
+            infoRectangleContentLeft2.style.display = "block";
+        }
+
+        openInfoRight.onclick = function () {
+            infoRectangleRight.style.display = "flex";
+            infoTriangleRight.style.display = "block";
+            infoRectangleContentRight1.style.display = "block";
+            infoRectangleContentRight2.style.display = "block";
+        }
+
+
+        // function openInfoRight() {
+        //     infoRectangleRight.style.display = "flex";
+        //     infoTriangleRight.style.display = "block";
+        //     infoRectangleContentRight1.style.display = "block";
+        //     infoRectangleContentRight2.style.display = "block";
+        // }
+
+        // function openInfoLeft() {
+        //     infoRectangleLeft.style.display = "flex";
+        //     infoTriangleLeft.style.display = "block";
+        //     infoRectangleContentLeft1.style.display = "block";
+        //     infoRectangleContentLeft2.style.display = "block";
+        // }
+
+        function closeInfoLeft() {
+            infoRectangleLeft.style.display = "none";
+            infoTriangleLeft.style.display = "none";
+            infoRectangleContentLeft1.style.display = "none";
+            infoRectangleContentLeft2.style.display = "none";
+        }
+
+        function closeInfoRight() {
+            infoRectangleRight.style.display = "none";
+            infoTriangleRight.style.display = "none";
+            infoRectangleContentRight1.style.display = "none";
+            infoRectangleContentRight2.style.display = "none";
         }
 
 
