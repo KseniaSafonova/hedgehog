@@ -334,22 +334,54 @@ $darkgray: #195557;
     box-sizing: border-box;
 }
 
-.main__cards_rightBlock img:nth-child(1) {
+// .main__cards_rightBlock img:nth-child(1) {
+//     // margin-bottom: -50px;
+//     // margin-left: 310px;
+//     border: 1px solid red;
+// }
+
+#openInfoRight {
     margin-bottom: -50px;
     margin-left: 310px;
+    border: 1px solid red;
+    z-index: 2;
 }
 
-.main__cards_rightBlock img:nth-child(2) {
-    margin-top: 75px;
+#openInfoLeft {
+    margin-bottom: -50px;
+    margin-left: 310px;
+    border: 1px solid red;
+    z-index: 2;
 }
 
-.main__cards_rightBlockEllipse1 {
-    margin-top: -70px;
-    margin-left: 15px;
+// #openInfoRight {
+//     background-image: url('/assets/images/info.png');
+//     border: 1px solid red;
+//     margin-bottom: -50px;
+//     margin-left: 310px;
+//     position: relative;
+//     z-index: 3;
+//     width: 100px;
+//     height: 100px;
+// }
+
+
+
+.Evgeny {
+    margin-left: -200px;
+    margin-top: -20px;
+    border: 1px solid red;
+    z-index: 1;
 }
 
-.main__cards_rightBlockEllipse2 {
-    margin-top: -110px;
+.Maksim {
+    margin-top: 80px;
+    border: 1px solid red;
+    z-index: 1;
+}
+
+.main__cards_rightBlockEllipse {
+    margin-top: -100px;
     margin-left: 15px;
 }
 
@@ -410,21 +442,23 @@ $darkgray: #195557;
 .main__cards_addBlockRight {
     width: 230px;
     height: 144px;
-    margin-left: 240px;
-    margin-top: -40px;
+    margin-left: 270px;
+    margin-top: -70px;
     background: #FFFFFF;
     transform: rotate(-45deg);
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 .main__cards_addBlockLeft {
     width: 230px;
     height: 144px;
-    margin-left: 240px;
-    margin-top: -40px;
+    margin-left: 270px;
+    margin-top: -90px;
     background: #FFFFFF;
     transform: rotate(-45deg);
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 .main__cards_addBlockRight div,
@@ -433,7 +467,7 @@ $darkgray: #195557;
     height: 27px;
     background-image: url(/assets/images/+.svg);
     transform: rotate(45deg);
-    margin-left: 110px;
+    margin-left: 50px;
     padding-top: 120px;
     background-repeat: no-repeat;
 }
