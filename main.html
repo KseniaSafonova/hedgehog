@@ -84,7 +84,7 @@
         </main>
     </div>
     <section class="main__cards">
-        <img src="/assets/images/arrowLeft.svg" class="main__cards_arrowLeft">
+        <img src="/assets/images/arrowLeft.svg" class="main__cards_arrowLeft" alt="left">
         <div class="main__cards_leftCard">
             <div class="main__cards_leftBlock">
                 <div class="main_cards_discount">-50%</div>
@@ -103,9 +103,8 @@
                     <div id="hedgehogInfoRectangle_imgLeft2"></div>
                     <div id="hedgehogInfoRectangle_textLeft2">1000</div>
                 </div>
-                <img src="/assets/images/info.png" id="openInfoLeft">
+                <img src="/assets/images/info.png" id="openInfoLeft" alt="Info">
                 <img src="/assets/images/Evgeny.png" alt="Evgeny" class="Evgeny">
-
                 <div class="main__cards_addBlockLeft">
                     <div class="main__cards_addBlockLeftImg"></div>
                 </div>
@@ -130,7 +129,7 @@
                     <div id="hedgehogInfoRectangle_imgRight2"></div>
                     <div id="hedgehogInfoRectangle_textRight2">1200</div>
                 </div>
-                <img src="/assets/images/info.png" id="openInfoRight">
+                <img src="/assets/images/info.png" id="openInfoRight" alt="Info">
                 <img src="/assets/images/Maksim.png" alt="Maksim" class="Maksim">
                 <img src="/assets/images/Ellipse.png" alt="" class="main__cards_rightBlockEllipse">
                 <div class="main__cards_addBlockRight">
@@ -138,7 +137,7 @@
                 </div>
             </div>
         </div>
-        <img src="/assets/images/arrowRight.svg" class="main__cards_arrowRight">
+        <img src="/assets/images/arrowRight.svg" class="main__cards_arrowRight" alt="right">
     </section>
     <section class="main__form">
         <div class="main__form_form">
@@ -170,13 +169,12 @@
                 <input type="text" placeholder="Ваш e-mail" class="main__form_input">
             </div>
             <div>
-                <input type="text" placeholder="Комментарий к заявке" class="main__form_textarea"></textarea>
+                <input type="text" placeholder="Комментарий к заявке" class="main__form_textarea">
             </div>
             <div class="main__form_mainButtonblock"><button class="main__form_mainButton">Купить ёжика</button></div>
         </div>
     </section>
     <section class="main__count">
-
         <div class="main__count_title">
             <img src="/assets/images/hedgehogDark.svg" alt="hedgehog">
             <p>У на осталось еще: <a href="">25 ёжиков</a></p>
@@ -206,58 +204,7 @@
             Указанная стоимость товаров и условия их приобретения действительны на текущую дату.
         </div>
     </footer>
-    <script>
-        let list = document.getElementById('header__nav_list');
-        let openList = document.getElementById('openList');
-        let closeTriangle = document.getElementById('header__nav_closedList');
-        let openTriangle = document.getElementById('header__nav_openedList');
-
-        openList.onclick = function () {
-            list.style.display = "block";
-            closeTriangle.style.display = "none"
-            openTriangle.style.display = "block"
-        }
-
-        function closeList() {
-            list.style.display = "none";
-            openTriangle.style.display = "none"
-            closeTriangle.style.display = "block"
-        }
-
-        let infoRectangleRight = document.getElementById('hedgehogInfoRectangleRight');
-        let infoTriangleRight = document.getElementById('hedgehogInfoTriangleRight');
-
-        let infoRectangleLeft = document.getElementById('hedgehogInfoRectangleLeft');
-        let infoTriangleLeft = document.getElementById('hedgehogInfoTriangleLeft');
-
-        let openInfoLeft = document.getElementById('openInfoLeft');
-        let openInfoRight = document.getElementById('openInfoRight');
-
-        openInfoLeft.onclick = function () {
-            infoRectangleLeft.style.display = "flex";
-            infoTriangleLeft.style.display = "block";
-        }
-
-        openInfoRight.onmouseover = function () {
-            infoRectangleRight.style.display = "flex";
-            infoTriangleRight.style.display = "block";
-        }
-
-        openInfoRight.onmouseout = function () {
-            infoRectangleRight.style.display = "none";
-            infoTriangleRight.style.display = "none";
-        }
-
-        openInfoLeft.onmouseover = function () {
-            infoRectangleLeft.style.display = "flex";
-            infoTriangleLeft.style.display = "block";
-        }
-
-        openInfoLeft.onmouseout = function () {
-            infoRectangleLeft.style.display = "none";
-            infoTriangleLeft.style.display = "none";
-        }
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
