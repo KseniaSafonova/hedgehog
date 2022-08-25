@@ -345,7 +345,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .main__cards_leftBlock {
@@ -360,13 +360,13 @@
 
 #openInfoRight {
   margin-top: 20px;
-  margin-left: 310px;
+  margin-left: 290px;
   position: absolute;
 }
 
 #openInfoLeft {
   margin-top: 20px;
-  margin-left: 310px;
+  margin-left: 290px;
   position: absolute;
 }
 
@@ -495,9 +495,10 @@
   background-color: #195557;
   height: 88px;
   width: 220px;
-  margin-left: 210px;
+  margin-left: 190px;
   margin-top: 65px;
   position: absolute;
+  z-index: 3;
   color: #FFFFFF;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -518,8 +519,8 @@
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 10px solid #195557;
-  margin-left: 307px;
-  margin-top: 55px;
+  margin-left: 288px;
+  margin-top: 56px;
 }
 
 #hedgehogInfoRectangle_imgLeft1,
@@ -530,13 +531,6 @@
   height: 30px;
   margin-left: 30px;
   margin-top: 2px;
-}
-
-.hedgehogInfoRectangle_contentRight,
-.hedgehogInfoRectangle_contentLeft {
-  display: none;
-  width: 50px;
-  height: 30px;
 }
 
 #hedgehogInfoRectangle_imgLeft2,
