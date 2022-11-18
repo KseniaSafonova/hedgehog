@@ -6,24 +6,34 @@
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .header__logo {
   margin-top: 35px;
   margin-left: 61px;
 }
-
 .header__nav {
   margin-top: 69px;
   font-size: 16px;
   height: 20px;
   margin-left: 589px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   z-index: 0;
+}
+.header__nav_a {
+  margin-left: 89px;
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #195557;
+  text-decoration: none;
+}
+.header__nav_a:nth-child(2) {
+  margin-left: 0px;
+}
+.header__nav_a:hover {
+  border-bottom: 1px solid #195557;
 }
 
 #header__nav_closedList {
@@ -49,33 +59,14 @@
 
 #openList {
   border: none;
-  font-family: 'Cormorant Infant';
+  font-family: "Cormorant Infant";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   color: #195557;
   background-color: #EAEEEF;
 }
-
 #openList:hover {
-  border-bottom: 1px solid #195557;
-}
-
-.header__nav_a {
-  margin-left: 89px;
-  font-family: 'Cormorant Infant';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  color: #195557;
-  text-decoration: none;
-}
-
-.header__nav_a:nth-child(2) {
-  margin-left: 0px;
-}
-
-.header__nav_a:hover {
   border-bottom: 1px solid #195557;
 }
 
@@ -88,10 +79,8 @@
   margin-left: -20px;
   margin-top: 20px;
   background: #FFFEFE;
-  -webkit-box-shadow: 4px 4px 20px #C2CCCA;
-          box-shadow: 4px 4px 20px #C2CCCA;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-shadow: 4px 4px 20px #C2CCCA;
+  box-sizing: border-box;
   position: absolute;
 }
 
@@ -101,37 +90,31 @@
 }
 
 #header__nav_list a {
-  font-family: 'Cormorant Infant';
+  font-family: "Cormorant Infant";
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   color: #195557;
 }
-
 #header__nav_list a:hover {
   border-bottom: 1px solid #195557;
 }
 
 .header__phoneNumber {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 48px;
 }
-
 .header__phoneNumber__button {
   background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
-  -webkit-box-shadow: 4px 4px 20px 0px #C2CCCA;
-          box-shadow: 4px 4px 20px 0px #C2CCCA;
+  box-shadow: 4px 4px 20px 0px #C2CCCA;
   height: 69px;
   width: 69px;
   border-radius: 40px;
   border-style: none;
   margin-left: 132px;
 }
-
 .header__phoneNumber__number {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 22px;
   font-weight: 500;
   line-height: 26px;
@@ -140,37 +123,32 @@
   color: #195557;
   margin-top: 21px;
   margin-left: 20px;
-  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
-          font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 
 .header__basket {
   margin-left: 80px;
   height: 33px;
 }
-
 .header__basket img {
   margin-top: -15px;
   z-index: 0;
   position: relative;
 }
-
 .header__basket_number {
   border-radius: 50%;
   background-color: #FFEDCD;
   width: 19px;
   height: 19px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Raleway';
+  box-sizing: border-box;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 10px;
   padding-top: 3px;
   text-align: center;
   text-transform: uppercase;
-  -webkit-font-feature-settings: 'tnum' on, 'lnum' on;
-          font-feature-settings: 'tnum' on, 'lnum' on;
+  font-feature-settings: "tnum" on, "lnum" on;
   margin-left: 25px;
   margin-top: 55px;
   position: relative;
@@ -181,27 +159,23 @@
   text-align: center;
   color: #70908B;
 }
-
 .main__title__hedgehogs {
   height: 94px;
   width: 443px;
   margin-top: 173px;
 }
-
 .main__title__text1 {
-  font-family: 'Cormorant Infant';
+  font-family: "Cormorant Infant";
   font-size: 50px;
   font-weight: 400;
   margin-top: 19px;
 }
-
 .main__title__text2 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 14px;
   font-weight: 400;
   margin-top: 18px;
 }
-
 .main__title_mainButton {
   height: 69px;
   width: 328px;
@@ -210,29 +184,23 @@
   border-color: #70908B;
   color: #FFFFFF;
   border-style: none;
-  -webkit-box-shadow: 4px 4px 20px 0px #C2CCCA;
-          box-shadow: 4px 4px 20px 0px #C2CCCA;
-  font-family: 'Raleway';
+  box-shadow: 4px 4px 20px 0px #C2CCCA;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   margin-top: 34px;
 }
-
 .main__title_mainButton:hover {
   background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
   color: #195557;
 }
 
 .main__about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-
 .main__about__hedgehogHealth {
   margin-left: -50px;
 }
@@ -240,22 +208,15 @@
 .hedgehogBreeding_logo,
 .hedgehogHealth_logo,
 .hedgehogLove_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 152px;
   height: 152px;
   border-radius: 50%;
   margin-left: 95px;
   margin-right: 95px;
-  -webkit-box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
-          box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+  box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
 }
 
 .hedgehogBreeding_logo {
@@ -287,7 +248,7 @@
 .hedgehogBreeding_text1,
 .hedgehogHealth_text1,
 .hedgehogLove_text1 {
-  font-family: 'Cormorant Infant';
+  font-family: "Cormorant Infant";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -297,7 +258,7 @@
 .hedgehogBreeding_text2,
 .hedgehogHealth_text2,
 .hedgehogLove_text2 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -314,52 +275,135 @@
 }
 
 .main__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-left: 300px;
   margin-top: 100px;
 }
-
 .main__cards_leftCard {
   width: 570px;
   height: 397px;
   background: #FFEDCD;
   border-radius: 20px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
   position: relative;
   z-index: 1;
 }
-
 .main__cards_rightCard {
   width: 570px;
   height: 397px;
   background: #E2F0DF;
   border-radius: 20px;
   margin-left: 39px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
   position: relative;
   z-index: 1;
 }
-
 .main__cards_leftBlock {
   margin-left: 62px;
 }
-
 .main__cards_rightBlock {
   margin-left: -70px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+.main__cards_rightBlockEllipse {
+  margin-top: -100px;
+  margin-left: 15px;
+}
+.main__cards_discount {
+  height: 36px;
+  width: 68px;
+  background-color: #70908B;
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 6px;
+  box-sizing: border-box;
+  margin-top: -6px;
+}
+.main__cards_title {
+  font-family: "Cormorant Infant";
+  font-size: 40px;
+  font-weight: 700;
+  color: #195557;
+  margin-top: 24px;
+}
+.main__cards_text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  margin-top: 17px;
+  width: 182px;
+}
+.main__cards_price1 {
+  width: 204px;
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #C2CCCA;
+  margin-top: 7px;
+  margin-bottom: 0px;
+}
+.main__cards_price2 {
+  width: 204px;
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #195557;
+  margin-top: 0;
+}
+.main__cards_addBlockRight {
+  width: 180px;
+  height: 144px;
+  margin-left: 320px;
+  margin-top: -100px;
+  background: #FFFFFF;
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+.main__cards_addBlockRight div {
+  width: 27px;
+  height: 27px;
+  background-image: url(/assets/images/+.svg);
+  transform: rotate(45deg);
+  margin-left: 20px;
+  padding-top: 90px;
+  background-repeat: no-repeat;
+}
+.main__cards_addBlockLeft {
+  width: 230px;
+  height: 144px;
+  margin-left: 290px;
+  margin-top: -100px;
+  background: #FFFFFF;
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+.main__cards_addBlockLeft div {
+  width: 27px;
+  height: 27px;
+  background-image: url(/assets/images/+.svg);
+  transform: rotate(45deg);
+  margin-left: 40px;
+  padding-top: 120px;
+  background-repeat: no-repeat;
+}
+.main__cards_arrowLeft {
+  margin-right: 35px;
+}
+.main__cards_arrowRight {
+  margin-left: 35px;
 }
 
 #openInfoRight {
@@ -383,116 +427,6 @@
   padding-top: 100px;
 }
 
-.main__cards_rightBlockEllipse {
-  margin-top: -100px;
-  margin-left: 15px;
-}
-
-.main_cards_discount {
-  height: 36px;
-  width: 68px;
-  background-color: #70908B;
-  font-family: 'Raleway';
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-  color: #FFFFFF;
-  padding: 6px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-top: -6px;
-}
-
-.main__cards_title {
-  font-family: 'Cormorant Infant';
-  font-size: 40px;
-  font-weight: 700;
-  color: #195557;
-  margin-top: 24px;
-}
-
-.main__cards_text {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  color: #000000;
-  margin-top: 17px;
-  width: 182px;
-}
-
-.main__cards_price1 {
-  width: 204px;
-  font-family: 'Cormorant Infant';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
-  color: #C2CCCA;
-  margin-top: 7px;
-  margin-bottom: 0px;
-}
-
-.main__cards_price2 {
-  width: 204px;
-  font-family: 'Cormorant Infant';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  color: #195557;
-  margin-top: 0;
-}
-
-.main__cards_addBlockRight {
-  width: 180px;
-  height: 144px;
-  margin-left: 320px;
-  margin-top: -100px;
-  background: #FFFFFF;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.main__cards_addBlockLeft {
-  width: 230px;
-  height: 144px;
-  margin-left: 290px;
-  margin-top: -100px;
-  background: #FFFFFF;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.main__cards_addBlockRight div,
-.main__cards_addBlockLeft div {
-  width: 27px;
-  height: 27px;
-  background-image: url(/assets/images/+.svg);
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  margin-left: 40px;
-  padding-top: 120px;
-  background-repeat: no-repeat;
-}
-
-.main__cards_addBlockRight div {
-  margin-left: 20px;
-  padding-top: 90px;
-}
-
-.main__cards_arrowLeft {
-  margin-right: 35px;
-}
-
-.main__cards_arrowRight {
-  margin-left: 35px;
-}
-
 #hedgehogInfoRectangleRight,
 #hedgehogInfoRectangleLeft {
   display: none;
@@ -504,14 +438,11 @@
   position: absolute;
   z-index: 3;
   color: #FFFFFF;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Raleway';
+  align-items: center;
+  font-family: "Raleway";
   font-size: 14px;
   font-weight: 400;
-  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
-          font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 
 #hedgehogInfoTriangleRight,
@@ -553,16 +484,14 @@
   position: relative;
   z-index: 1;
 }
-
 .main__form_form {
   height: 484px;
   width: 1197px;
   border-radius: 30px;
   background-color: #EAEEEF;
 }
-
 .main__form_formTitle {
-  font-family: 'Cormorant Infant';
+  font-family: "Cormorant Infant";
   font-size: 45px;
   font-weight: 700;
   height: 54px;
@@ -570,23 +499,16 @@
   padding-left: 50px;
   padding-top: 39px;
 }
-
 .main__form_topBlock {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .main__form_button {
-  font-family: 'Cormorant Infant';
+  font-family: "Cormorant Infant";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 170px;
   height: 49px;
   color: #70908B;
@@ -597,31 +519,77 @@
   margin-top: 30px;
   margin-left: 14px;
 }
-
 .main__form_button:nth-child(1) {
   background-color: #70908B;
   color: #FFFFFF;
   margin-left: 49px;
 }
-
 .main__form_button:nth-child(3) {
   width: 199px;
 }
-
 .main__form_radioBlock {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -webkit-column-gap: 53px;
-          column-gap: 53px;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 53px;
+       column-gap: 53px;
   float: right;
   margin-top: 20px;
-  font-family: 'Cormorant Infant';
+  font-family: "Cormorant Infant";
   font-size: 14px;
   font-weight: 700;
   color: #70908B;
   margin-right: 113px;
+}
+.main__form_input {
+  height: 62px;
+  width: 352px;
+  border-radius: 8px;
+  background: #F8F8F8;
+  margin-top: 43px;
+  border: none;
+  margin-left: 20px;
+  color: #195557;
+  padding-left: 27px;
+  box-sizing: border-box;
+  outline: 0;
+}
+.main__form_input:nth-child(1) {
+  margin-left: 49px;
+}
+.main__form_textarea {
+  height: 108px;
+  width: 1102px;
+  border-radius: 8px;
+  background: #F8F8F8;
+  border: none;
+  margin-top: 20px;
+  margin-left: 49px;
+  padding-left: 27px;
+  box-sizing: border-box;
+  outline: 0;
+}
+.main__form_mainButtonblock {
+  text-align: center;
+}
+.main__form_mainButton {
+  height: 69px;
+  width: 328px;
+  border-radius: 40px;
+  background-color: #70908B;
+  border-color: #70908B;
+  color: #FFFFFF;
+  border-style: none;
+  box-shadow: 4px 4px 20px 0px #C2CCCA;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 45px;
+}
+.main__form_mainButton:hover {
+  background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
+  color: #195557;
 }
 
 .radio {
@@ -638,95 +606,31 @@
   margin-left: 20px;
 }
 
-.main__form_input {
-  height: 62px;
-  width: 352px;
-  border-radius: 8px;
-  background: #F8F8F8;
-  margin-top: 43px;
-  border: none;
-  margin-left: 20px;
-  color: #195557;
-  padding-left: 27px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.main__form_input:nth-child(1) {
-  margin-left: 49px;
-}
-
-.main__form_textarea {
-  height: 108px;
-  width: 1102px;
-  border-radius: 8px;
-  background: #F8F8F8;
-  border: none;
-  margin-top: 20px;
-  margin-left: 49px;
-  padding-left: 27px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.main__form_mainButtonblock {
-  text-align: center;
-}
-
-.main__form_mainButton {
-  height: 69px;
-  width: 328px;
-  border-radius: 40px;
-  background-color: #70908B;
-  border-color: #70908B;
-  color: #FFFFFF;
-  border-style: none;
-  -webkit-box-shadow: 4px 4px 20px 0px #C2CCCA;
-          box-shadow: 4px 4px 20px 0px #C2CCCA;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  margin-top: 45px;
-}
-
-.main__form_mainButton:hover {
-  background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
-  color: #195557;
-}
-
 .main__count {
   display: block;
   margin-left: 777px;
   margin-top: 60px;
   width: 370px;
 }
-
 .main__count_title {
-  font-family: 'Cormorant Infant';
+  font-family: "Cormorant Infant";
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
   color: #195557;
   margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .main__count_title p {
   margin-left: 13px;
 }
-
 .main__count_title a {
   color: #195557;
 }
-
 .main__count_text {
   height: 47px;
   width: 191px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -742,28 +646,22 @@
   background-color: #70908B;
   margin-top: 60px;
 }
-
 .footer__topBlock {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 96px;
   width: 1920px;
 }
-
 .footer__logo {
   width: 132px;
   margin-left: 60px;
   margin-top: 49px;
 }
-
 .footer__nav {
   margin-left: 610px;
   margin-top: 78px;
 }
-
 .footer__nav a {
-  font-family: 'Cormorant Infant';
+  font-family: "Cormorant Infant";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -773,44 +671,37 @@
   text-decoration: none;
   margin-left: 85px;
 }
-
 .footer__nav a:nth-child(1) {
   margin-left: 0;
 }
-
 .footer__socialNetworks {
   width: 160px;
   margin-left: 100px;
 }
-
 .footer__socialNetworks img {
   margin-left: 10px;
   margin-top: 65px;
 }
-
 .footer__phoneNumber {
   width: 194px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
   text-transform: uppercase;
-  -webkit-font-feature-settings: 'tnum' on, 'lnum' on;
-          font-feature-settings: 'tnum' on, 'lnum' on;
+  font-feature-settings: "tnum" on, "lnum" on;
   margin-left: 76px;
   margin-top: 74px;
 }
-
 .footer__bottomBlock {
   height: 24px;
   width: 398px;
   color: #FFFFFF;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 9px;
   font-weight: 400;
   margin-left: 61px;
   margin-top: 25px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
